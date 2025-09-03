@@ -1,0 +1,14 @@
+urutan studi kasus
+
+
+
+if, else if, else
+
+studikasus1.html --> studikasus5.html
+
+///////////////////////////////////////////////
+
+
+switch
+
+studikasus6 --> studikasus10
