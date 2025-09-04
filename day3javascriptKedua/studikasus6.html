@@ -8,11 +8,14 @@
 <body>
     <script>
 
- let jumlah = 2;
-  for (let i = 1; i <= 10; i++) {
-  jumlah += i;
-  }
-console.log("Jumlah 1 sampai 10 adalah " + jumlah);
+
+let dadu;
+while (dadu !== 1) {
+    dadu = Math.floor(Math.random() * 6) + 1;
+    console.log("Lempar dadu: " + dadu);
+}
+console.log("Dangka enam tamat");
+
 
     </script>
 </body>

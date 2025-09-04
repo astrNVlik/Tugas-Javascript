@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let nilai = 85; 
+let grade;
+let keterangan;
+
+if (nilai >= 90) {
+  grade = "A";
+  keterangan = "rangking satu";
+} else if (nilai >= 80) {
+  grade = "B";
+  keterangan = "bagus";
+} else if (nilai >= 70) {
+  grade = "C";
+  keterangan = "lumayan";
+} else if (nilai >= 60) {
+  grade = "D";
+  keterangan = "remedial";
+} else {
+  grade = "E";
+  keterangan = "gausah sekolah";
+}
+
+console.log(`Nilai siswa: ${grade} (${keterangan})`);
+
+    </script>
+</body>
+</html>
