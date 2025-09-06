@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function buatTabungan() {
+  let saldo = 0;
+
+  function simpan(uang) {
+    saldo += uang;
+    console.log("Saldo sekarang: " + saldo);
+  }
+
+  return simpan;
+}
+
+let tabungan = buatTabungan();
+tabungan(10000);
+tabungan(5000);  
+    </script>
+</body>
+</html>

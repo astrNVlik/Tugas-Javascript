@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    function buatnama() {
+      let daftar = [];  
+      let hitung = 0;  
+      function tambahnama(nama) {  
+        daftar.push(nama);        
+        hitung++;                  
+        console.log("Counter: " + hitung);
+        console.log("Daftar: ", daftar);
+      }
+
+      return tambahnama;
+    }
+
+    let catatannama = buatnama();
+    catatannama("ricky");
+    catatannama("haryadi");
+    catatannama("mario");
+
+    </script>
+</body>
+</html>

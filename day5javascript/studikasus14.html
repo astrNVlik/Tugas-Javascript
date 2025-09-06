@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function AWALTimer() {
+  let detik = 0;
+
+  function tick() {
+    detik++;
+    console.log("Waktu: " + detik + " detik");
+  }
+
+  return tick;
+}
+
+let timer = AWALTimer();
+timer(); 
+timer(); 
+timer(); 
+timer(); 
+
+    </script>
+</body>
+</html>
