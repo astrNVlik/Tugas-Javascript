@@ -179,7 +179,7 @@ else {
 
 // soal 15
 
-let siswa = [
+let  = [
   { nama: "Andi", nilai: 85 },
   { nama: "Budi", nilai: 92 },
   { nama: "Citra", nilai: 78 },
@@ -302,3 +302,97 @@ function hitungcicilan(paket) {
 
 //soal 22
 
+function cicilan(harga, cicilan) {
+  const jumlahCicilan = harga / cicilan;
+  let hasil = [];
+
+  for (let i = 1; i <= cicilan; i++) {
+    hasil.push(`Cicilan ${i}: Rp${jumlahCicilan.toLocaleString('id-ID')}`);
+  }
+
+  return hasil;
+}
+
+console.log(cicilan(888888, 3).join('\n'));
+
+//soal 23
+
+const kelas = {
+
+A: 2,
+B: 3, 
+C: 4,
+
+}
+
+function kelasTest(siswa)
+{
+
+  let sisa = siswa
+  const hasil = {}
+
+  for (let ruangan in kelas) {
+
+    let kapasitas = kelas [ruangan]
+    if (sisa = 0) break;
+    let isi = Math.min(kapasitas, sisa)
+    hasil[ruangan] = isi
+    sisa -= isi
+
+   if (sisa > 0) {
+    hasil["Overflow"] = sisa; 
+
+
+    }
+
+    return hasil;
+      
+  }
+
+
+  
+}
+
+console.log(hitungCicilan(800000, 3).join('\n'));
+
+
+// soal 24
+
+
+function hitungabsensi (pertemuan, hadir) {
+
+
+const persantase = (hadir / pertemuan) * 100
+return '${persentase.toFixed(2)}%'
+
+
+
+}
+
+console.log(hitungabsensi(16, 43));
+
+// soal 25
+
+const siswa = {
+  nama: "Budi",
+  paket: "Premium",
+  cicilanKe: 2,
+  totalCicilan: 4,
+  totalBayar: 1200000,
+  absensi: 10,
+  totalPertemuan: 12
+};
+
+function laporanSiswa(data) {
+  const perPertemuan = data.totalBayar / data.totalPertemuan;
+  const cicilan = data.totalBayar / data.totalCicilan;
+  const persentaseHadir = (data.absensi / data.totalPertemuan) * 100;
+
+  console.log(`Nama: ${data.nama}`);
+  console.log(`Paket: ${data.paket}`);
+  console.log(`Biaya per pertemuan: Rp${perPertemuan.toLocaleString('id-ID')}`);
+  console.log(`Cicilan ke-${data.cicilanKe}: Rp${cicilan.toLocaleString('id-ID')}`);
+  console.log(`Persentase Kehadiran: ${persentaseHadir.toFixed(2)}%`);
+}
+
+laporanSiswa(siswa);
