@@ -9,7 +9,38 @@
     
 <script>
 
- 
+const menumakan = [
+
+{nama: "Ayam goreng", kategori:"makanan", harga: 21313},
+{nama: "Ayam bakar", kategori:"makanan", harga: 21313},
+{nama: "Ayam madu", kategori:"makanan", harga: 21313},
+{nama: "Ayam goreng krispy", kategori:"makanan", harga: 2913},
+{nama: "Ayam kuah", kategori:"makanan", harga: 2213}
+
+]
+console.log("daftar menu:")
+menumakan.forEach(item => {
+  console.log(`Nama: ${item.nama}Kategori: ${item.kategori}Harga: ${item.harga}`);
+});
+
+const murahmenu = menumakan.filter(item=>item.harga<2300000)
+console.log("menu murah (<10000)")
+
+const daftar = menumakan.map
+
+const cari = menumakan.find(item=>item.nama=="Ayam Madu")
+console.log("menu recomended")
+console.log(cari.menumakan)
+
+const [item1, item2] =   menu
+
+console.log("destructuring array")
+console.log("makanan1", ={nama: '$menumakanan'})
+
+
+const { nama, harga } = makanan1;
+console.log("\nDestructuring Object:");
+console.log(`nama = "${nama}", harga = ${harga}`);
 
 </script>
 
